@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="main">
+<head>
+  <!-- SCROLLS -->
+  <!-- load bootstrap and fontawesome via CDN -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script> 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
+    
+  <script src="https://cdn.rawgit.com/janantala/angular-qr/master/lib/qrcode.js" type="text/javascript"></script>
+  <script src="https://cdn.rawgit.com/janantala/angular-qr/master/src/angular-qr.js" type="text/javascript"></script>
+
+  <script src='mainController.js'></script>
+</head>
+
+<body ng-controller="mainController">
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <h1>CAST GROUP</h1>
+       
+    </header>
+
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        
+        </div>
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="#">HOME</a></li>
+        <li><a href="#ferias">CADASTRO FERIAS</a></li>
+        <li><a href="#equipe">CADASTRO DO EQUIPE</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+                <li>Bemvindo, {{usuario.vcNome}} </li>
+                <li><a href="" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>Sair</a></li>
+              </ul>
+    </div>
+    </nav>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <hr>
+        <strong>- Adolfo Ccanto -</strong>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: apiCastGroup
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: accanto
+Implementation-Vendor-Id: com.group.cast
+Build-Jdk: 1.8.0_211
+Implementation-URL: http://projects.spring.io/spring-boot/apiCastGroup
+ /
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

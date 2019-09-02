@@ -1,0 +1,40 @@
+<div ng-controller="equipeController" class="container"> 
+
+    
+    <h1>CADASTRO DE EQUIPE</h1> 
+    
+
+    <form name="form" ng-submit="cadastrarEquipe()" role="form">
+    
+      <div class="row">
+        
+        <p class="col-lg-2 col-md-2">Nome do Equipe: </p>
+        
+        <div class="col-lg-5 col-md-5">
+          <input type="text" class="form-control" ng-model="vcNomeEquipe"/>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-xs-4">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </div>
+
+      </div>
+    
+
+  </form>
+
+    <br/>
+
+  <table class="table table-striped">
+      <tr>
+          <th>Name</th>
+       </tr>
+      <tr ng-repeat="equipe in lstEquipe">
+        <td>{{ equipe.vcName }}</td>
+      </tr>
+    </table>
+
+
+
+</div>
+  
